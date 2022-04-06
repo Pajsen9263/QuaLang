@@ -1,4 +1,11 @@
 main
-    define msg value "Never gonna give you up, never gonna let you down~\n"
-    log msg
+    import sys done
+    log sys.version
+    define msg value "Strings in Qua"
+    define String value "This is a string in Qua"
+    define MathMsg value "Math in Qua:"
+    define Math value 2+2
+    define ArrayMsg value ["Array 1", "Array 2", "Array 2"]
+    define spacer value "\n"
+    log spacer, msg, spacer, String, spacer, MathMsg, spacer, Math, spacer, ArrayMsg, spacer
 end

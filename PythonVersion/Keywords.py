@@ -7,7 +7,7 @@ KW_if           = 'if'
 KW_let          = 'define'
 KW_assign       = 'value'
 KW_import1      = 'import'
-KW_import2      = "imports"
+KW_import2      = "done"
 KW_def          = 'function'
 KW_return1      = 'return'
 KW_return2      = 'callback'
@@ -26,9 +26,9 @@ KW_greater_than_OP = 'igt'
 KW_greater_or_equals_OP = 'igtoet' 
 KW_less_or_equals_OP = 'iltoet'
 KW_is_not_OP = 'isNot'
-KW_equals_OP = 'equals'
+KW_equals_OP = 'is'
 
-KW_PY = "py:"
+KW_PY = "python:"
 
 keywords = [
     KW_print,
