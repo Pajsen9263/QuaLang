@@ -1,1 +1,4 @@
-
+main
+    define msg value "Never gonna give you up, never gonna let you down~\n"
+    log msg
+end
