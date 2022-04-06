@@ -1,0 +1,21 @@
+main
+    define spacer value "\n"
+    function BubbleSort arr
+        define index value 0
+        while index is less than length(arr)
+            define index value index + 1
+            define index2 value 0
+            while index2 is less than length(arr) - 1
+                if arr[index2] is greater than arr[index2 + 1]
+                    define arr[index2], arr[index2 + 1] value arr[index2 + 1], arr[index2]
+                end
+                define index2 value index2 + 1
+            end
+        end
+        log arr, spacer
+    end
+
+
+    define arr value [6, 7, 5, 9, 12]
+    BubbleSort(arr)
+    end

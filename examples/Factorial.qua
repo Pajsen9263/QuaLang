@@ -1,0 +1,14 @@
+main
+    define spacer value "\n"
+    function factorial num
+        if num is 0
+            return 1, data
+        end
+
+        return factorial(num-1) * num,  data
+    end
+
+    define res value factorial(5)
+    log res, spacer
+
+end

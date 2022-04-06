@@ -1,4 +1,5 @@
 main
+    define spacer value "\n"
     import sys done
     function add num1, num2
         return num1 + num2 
@@ -21,16 +22,16 @@ main
         define num1 value to_float(input[0])
         define num2 value to_float(input[2])
         if operator is "+"
-            log add(num1, num2)
+            log add(num1, num2), spacer
         end
         if operator is "-"
-            log subtract(num1, num2)
+            log subtract(num1, num2), spacer
         end
         if operator is "/"
-            log divide(num1, num2)
+            log divide(num1, num2), spacer
         end
         if operator is "*"
-            log multiply(num1, num2)
+            log multiply(num1, num2), spacer
         end
 
     end

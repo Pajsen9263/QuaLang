@@ -1,0 +1,8 @@
+main
+    define spacer value "\n"
+    define idx value 0
+    while idx is less than 99
+        define idx value idx + 1
+        log idx, spacer
+    end
+end

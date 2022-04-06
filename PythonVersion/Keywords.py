@@ -1,32 +1,32 @@
 from sys import stdout
 
 # Keywords
-KW_print        = 'log'
-KW_if           = 'if'
+KW_print = "log"
+KW_if = "if"
 
-KW_let          = 'define'
-KW_assign       = 'value'
-KW_import1      = 'import'
-KW_import2      = "done"
-KW_def          = 'function'
-KW_return1      = 'return'
-KW_return2      = 'callback'
-KW_try          = 'execute'
-KW_except       = 'except'
-KW_main         = 'main'
-KW_end          = 'end'
+KW_let = "define"
+KW_assign = "value"
+KW_import1 = "import"
+KW_import2 = "done"
+KW_def = "function"
+KW_return1 = "return"
+KW_return2 = "data"
+KW_try = "execute"
+KW_except = "except"
+KW_main = "main"
+KW_end = "end"
 
-KW_break        = 'breaker'
-KW_continue     = 'constant'
-KW_endless_loop = 'forever'
-KW_while_loop   = 'while'
+KW_break = "breaker"
+KW_continue = "constant"
+KW_endless_loop = "forever"
+KW_while_loop = "while"
 
-KW_less_than_OP = 'ilt' 
-KW_greater_than_OP = 'igt'
-KW_greater_or_equals_OP = 'igtoet' 
-KW_less_or_equals_OP = 'iltoet'
-KW_is_not_OP = 'isNot'
-KW_equals_OP = 'is'
+KW_less_than_OP = "islessthan"
+KW_greater_than_OP = "isgreaterthan"
+KW_greater_or_equals_OP = "isgreaterthanorequalto"
+KW_less_or_equals_OP = "islessthanorequalto"
+KW_is_not_OP = "isNot"
+KW_equals_OP = "is"
 
 KW_PY = "python:"
 
@@ -54,33 +54,64 @@ keywords = [
     KW_less_or_equals_OP,
     KW_is_not_OP,
     KW_equals_OP,
-
-    KW_PY
+    KW_PY,
 ]
 
-INDENT_KW = [
-KW_if, KW_def, KW_try, KW_except, KW_while_loop, KW_endless_loop
-]
+INDENT_KW = [KW_if, KW_def, KW_try, KW_except, KW_while_loop, KW_endless_loop]
 
 
 # Tokens that the interpreter will totally ignore
-ignore_tokens = {'~', "'"}
+ignore_tokens = {"~", "'"}
 
 # Characters in numbers
-digits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'}
+digits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."}
 
 # Separators are used in tokenization
 separators = {
-    '(', ')', '[', ']', '{', '}', ',', '\n', ' ', '+', '-', '*', '/', '%', '^', '='
+    "(",
+    ")",
+    "[",
+    "]",
+    "{",
+    "}",
+    ",",
+    "\n",
+    " ",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "^",
+    "=",
 }
 
 # Operators
 operators = {
-    '+', '-', '*', '/', '%', '^', '=',
-    '[', ']', '(', ')', '{', '}', ',',
-    '>', '<', '<=', '>=', '!=', 'is', 'isNot'
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "^",
+    "=",
+    "[",
+    "]",
+    "(",
+    ")",
+    "{",
+    "}",
+    ",",
+    ">",
+    "<",
+    "<=",
+    ">=",
+    "!=",
+    "is",
+    "isNot",
 }
-OP_build_in_functions = {'to_string', 'to_int', 'to_float', 'length'}
+OP_build_in_functions = {"to_string", "to_int", "to_float", "length"}
+
 
 def join_list(l):
-    return ''.join(map(str, l))
+    return "".join(map(str, l))
